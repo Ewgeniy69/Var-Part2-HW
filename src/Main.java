@@ -46,6 +46,10 @@ public class Main {
         byte bottleIn1Min = (byte) (bottle / bottleIn2Min);
         System.out.println("В минуту производительность бутылок составляет " + bottleIn1Min + " штук");
 
+        short bottleIn20Min = 20;
+        short totalBottleIn20Min = (short) (bottleIn1Min * bottleIn20Min);
+        System.out.println("За 20 минут изготовят " + totalBottleIn20Min + " бутылок");
+
         short minInDay = 24 * 60;
         System.out.println("В 1 сутках " + minInDay + " минут");
         int totalBottleIn1Day = bottle * minInDay;
@@ -56,11 +60,11 @@ public class Main {
         int totalBottleIn3Days = minIn3Day * bottle;
         System.out.println("За трое суток произведут " + totalBottleIn3Days + " бутылок");
 
-        byte dayIn1Mounth = 30;
-        int minIn1Mounth = dayIn1Mounth * minInDay;
-        System.out.println("В 1 месяце " + minIn1Mounth + " минут");
-        int bottleIn1Mounth = minIn1Mounth * bottle;
-        System.out.println("В месяц производительность бутылок составит " + bottleIn1Mounth + " штук");
+        byte dayIn1Month = 30;
+        int minIn1Month = dayIn1Month * minInDay;
+        System.out.println("В 1 месяце " + minIn1Month + " минут");
+        int bottleIn1Month = minIn1Month * bottle;
+        System.out.println("В месяц производительность бутылок составит " + bottleIn1Month + " штук");
 
         // Task # 5
         byte totalProduct = 120;
@@ -83,8 +87,9 @@ public class Main {
         System.out.println("Вес " + banana + " бананов составляет " + totalWeightBananas + " грамм");
 
         short milk = 200;
-        short weight100Milk = 105;
-        short totalWeightMilk = (short) (weight100Milk + weight100Milk);
+        byte milk2 = 100;
+        byte weight100Milk = 105;
+        int totalWeightMilk = (milk * weight100Milk / milk2);
         System.out.println("Вес 200 грамм молока составляет " + totalWeightMilk + " грамм");
 
         byte iceCream = 2;
